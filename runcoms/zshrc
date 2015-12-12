@@ -14,5 +14,8 @@ fi
 export EDITOR=vim
 export VISUAL=vim
 export BROWSER=firefox #until I can get webkit to install for uzbl
-export PAGER=more
+export PAGER=less
+
+typeset -U path
+path=(~/bin $path[@])
 
