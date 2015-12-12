@@ -1,0 +1,8 @@
+#compdef journal
+
+_arguments "*:Journal:($(
+	find ~/usr/journal | while read j
+	do
+		basename $j .rst
+	done
+	))"
